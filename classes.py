@@ -1,4 +1,4 @@
-EXP_MULT = 1.2
+EXP_MULT = 1.1
 RANK_UP_INCREMENT = 5
 
 RANKS = ['E', 'D', 'C', 'B', 'A', 'S', 'Nacional', 'Monarca']
