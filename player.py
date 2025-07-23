@@ -44,30 +44,45 @@ class Player:
   @property
   def hp(self) -> int:
     """Retorna os pontos de vida do jogador, multiplicados pelo multiplicador da classe.
+
+    returns:
+      int: Pontos de vida do jogador, arredondados para o inteiro mais próximo.
     """
     return round(self._hp * CLASSES[self.classe]['hp'])
 
   @property
   def forca(self) -> int:
     """Retorna a força do jogador, multiplicada pelo multiplicador da classe.
+
+    returns:
+      int: Força do jogador, arredondada para o inteiro mais próximo.
     """
     return round(self._forca * CLASSES[self.classe]['forca'], 1)
 
   @property
   def velocidade(self) -> int:
     """Retorna a velocidade do jogador, multiplicada pelo multiplicador da classe.
+
+    returns:
+      int: Velocidade do jogador, arredondada para o inteiro mais próximo.
     """
     return round(self._velocidade * CLASSES[self.classe]['velocidade'], 1)
   
   @property
   def inteligencia(self) -> int:
     """Retorna a inteligência do jogador, multiplicada pelo multiplicador da classe.
+
+    returns:
+      int: Inteligência do jogador, arredondada para o inteiro mais próximo.
     """
     return round(self._inteligencia * CLASSES[self.classe]['inteligencia'], 1)
 
   @property
   def exp_dados(self) -> dict[str, int]:
     """Retorna os dados de experiência acumulada e necessária para o próximo nível.
+
+    returns:
+      dict[str, int]: Dicionário contendo 'acumulado' e 'necessario' como chaves, representando a experiência acumulada e a necessária para o próximo nível, respectivamente.
     """
     return self._exp_dados
 
